@@ -52,7 +52,8 @@ fin:
 msg:
 		DB		0x0a, 0x0a		; 改行を2つ
 		DB		"hello, world"
-		DB		0x0a			; 改行
+		DB		0x0a, 0x0a			; 改行
+		DB		"Good bye"
 		DB		0
 
 		RESB	0x7dfe-($-$$)-0x7c00		; 0x7dfeまでを0x00で埋める命令
